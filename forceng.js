@@ -312,8 +312,8 @@ angular.module('forceng', [])
 
             var method = obj.method || 'GET',
                 headers = {},
-                url = getRequestBaseURL();
-            deferred = $q.defer();
+                url = getRequestBaseURL(),
+                deferred = $q.defer();
 
             // dev friendly API: Add leading '/' if missing so url + path concat always works
             if (obj.path.charAt(0) !== '/') {
